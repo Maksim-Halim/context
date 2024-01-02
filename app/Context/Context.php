@@ -37,6 +37,23 @@ class Context {
                 'productionYear' => 2001,
                 'color' => 'Green',
             ],
+
+            (object) [
+                'brandName' => 'Daewoo',
+                'model' => 'Lanos',
+                'modelDetails' => 'origin',
+                'modelYear' => 2006,
+                'productionYear' => 2006,
+                'color' => 'Silver',
+            ],
+            (object) [
+                'brandName' => 'Opel',
+                'model' => 'Astra',
+                'modelDetails' => 'lux',
+                'modelYear' => 2010,
+                'productionYear' => 2010,
+                'color' => 'Red',
+            ],
         ];
 
         $firstStrategy = new FirstStrategy();

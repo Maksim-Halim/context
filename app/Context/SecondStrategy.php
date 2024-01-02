@@ -1,10 +1,19 @@
 <?php
 
 
-namespace App\Http\Controllers;
+namespace App\Context;
 
 
-class SecondStrategy
+class SecondStrategy extends FormatStrategy
 {
 
+    protected function formatProperty($key, $value)
+    {
+        return "|$key|$value|\n";
+    }
+
+    protected function getStrategyName()
+    {
+        return 'second_strategy_' . date('Ymd_His') . '.txt';
+    }
 }

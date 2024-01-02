@@ -4,7 +4,6 @@
 namespace App\Context;
 
 
-class InterfaceStrategy
-{
-
+interface InterfaceStrategy {
+    public function formatData(array $objects): array;
 }
